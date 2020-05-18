@@ -1,10 +1,8 @@
 <?php include('inc/header.inc.php');?>
 
 <?php
-
-
-$result = $bdd->query("SELECT * FROM project");
-while ($dossier = $result->fetch(PDO::FETCH_OBJ)) { ?>
+        $result = $bdd->query("SELECT * FROM project");
+while ($dossier = $result->fetch(PDO::FETCH_OBJ)) {?>
 
         <div class="card">
                 <div class="card-body">
@@ -15,8 +13,6 @@ while ($dossier = $result->fetch(PDO::FETCH_OBJ)) { ?>
                 </div>
         </div>
 
-<?php }
-
-?>
+<?php } ?>
 
 <a href="index.php"><button> acceuil </button></a>
