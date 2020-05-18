@@ -19,7 +19,7 @@
           <a href="#">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com/crespo742/matthiascrespo">
+          <a href="https://github.com/crespo742/matthiascrespo2">
             <i class="fab fa-github"></i>
           </a>
           <a href="#">
