@@ -1,22 +1,21 @@
-<?php include('inc/header.inc.php');?>
+<?php 
+    include('inc/header.inc.php');
+?>
 
 <?php
 //Enregistrement du nouvelle article
 if (!empty($_POST)) {
-
-
-
-    // Insertion
+    
+    // la j'insere mes tables
 
     $_POST["titre1"] = htmlentities($_POST["titre1"], ENT_QUOTES);
     $_POST["titre2"] = htmlentities($_POST["titre2"], ENT_QUOTES);
     $_POST["titre3"] = htmlentities($_POST["titre3"], ENT_QUOTES);
     $_POST["description"] = htmlentities($_POST["description"], ENT_QUOTES);
 
-
     $requeteSQL = "INSERT INTO project (titre1,titre2,titre3,description )";
     $requeteSQL .= " VALUE ('$_POST[titre1]', '$_POST[titre2]','$_POST[titre3]','$_POST[description]')";
-    //echo $requeteSQL;
+    //donc ici j'execute les requetes sql
     $result = $bdd->exec($requeteSQL);
     echo $result . ' Vos informations ont bien etait enregistrer<br>';
 
